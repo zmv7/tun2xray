@@ -1,0 +1,10 @@
+[Unit]
+Description=tun2xray service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/path-to-script/tun2xray.sh up
+ExecStop=/path-to-script/tun2xray.sh down
