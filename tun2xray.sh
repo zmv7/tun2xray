@@ -2,7 +2,7 @@
 set -e
 
 TUN_DEVICE="tun0"
-TUN_IP="10.0.0.1/24"
+TUN_IP="10.0.0.1"
 STATE_DIR="/run/tun2xray"
 PID_FILE="$STATE_DIR/tun2socks.pid"
 IP_STORE="$STATE_DIR/ipstore"
